@@ -7,12 +7,14 @@
     "eslint": "npx eslint ./src --ext .js,.jsx,.ts,.tsx",
     "prettier": "npx prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "yarn run eslint; yarn run prettier",
-    "test": "jest"
+    "test": "jest",
+    "inbox": "npx ts-node ./src/01-inbox"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.3",
     "ganache": "^7.0.2",
     "solc": "^0.4.17",
     "solc-typed-ast": "^8.0.0",
